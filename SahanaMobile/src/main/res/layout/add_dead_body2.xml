@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    tools:context="com.example.mastergui.MainActivity" >
+
+    <ImageView
+        android:id="@+id/sahanaLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/header" />
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/countrySpinner"
+        android:layout_below="@+id/countrySpinner"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/addDeadBody2Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sahanaLogo"
+        android:layout_centerHorizontal="true"
+        android:text="Add Dead Body:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/address"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Address:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnsave"
+        android:layout_alignRight="@+id/btnsave"
+        android:layout_below="@+id/btnsave"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/btn"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/webView1"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Find on map"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addDeadBody2Heading"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:text="Select Country:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/postcodeTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="17dp"
+        android:text="Postcode:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/postcode"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/postcodeTxtView"
+        android:layout_alignRight="@+id/spinner2"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Gender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/btn" />
+
+    <EditText
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/countrySpinner"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10" >
+    </EditText>
+
+</RelativeLayout>

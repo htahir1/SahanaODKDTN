@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Google Inc.:Google APIs:22'
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "org.odk.collect.android"
+        minSdkVersion 16
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+}
+
+dependencies {
+    compile project(':googleplayservices_lib')
+    compile project(':androidsupportv7appcompat')
+    compile project(':SahanaMobile')
+    compile files('libs/apache-mime4j-0.6.jar')
+    compile files('libs/commons-io-2.4.jar')
+    compile files('libs/google-api-client-1.15.0-rc.jar')
+    compile files('libs/google-api-client-android-1.17.0-rc.jar')
+    compile files('libs/google-api-services-drive-v2-rev113-1.17.0-rc.jar')
+    compile files('libs/google-http-client-1.15.0-rc.jar')
+    compile files('libs/google-http-client-android-1.17.0-rc.jar')
+    compile files('libs/google-http-client-gson-1.17.0-rc.jar')
+    compile files('libs/google-oauth-client-1.17.0-rc.jar')
+    compile files('libs/gson-2.1.jar')
+    compile files('libs/httpclientandroidlib-4.2.1.jar')
+    //compile files('libs/httpmime-4.0.jar')
+    compile files('libs/javarosa-libraries-2015-01-10.jar')
+    compile files('libs/joda-time-2.0.jar')
+    compile files('libs/kxml2-2.3.0.jar')
+    compile files('libs/opencsv-2.3.jar')
+}

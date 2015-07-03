@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   <!-- DTNConfiguration file name. This will be a file in application directory in phone memory --> 
+   <string name="DTNConfigFilePath">dtn.config.xml</string>
+   
+   <!-- Flag indicate whether to clean up the DTN storage and configuration file when
+   the DTNService is started. This is very useful in the development time because the developer can
+   edit the dtn.config.xml in the assets folder and flash it to the phone without to edit the configuration file
+   on the phone. This is because the phone keyboard is not very user friendly :)-->
+   <string name="DTNCleanUpInitialize">false</string>
+   
+   <!-- The folder name for the application programming interface temp directory -->
+   <string name="DTNAPITempFilePrefix">api_tmp</string>
+ 
+   <!-- Flag whether to enable proactive fragmentation [Beta]-->  
+   <string name="DTNEnableProactiveFragmentation">false</string>
+   
+   <!-- The proactive fragmentation MTU, unit is in bytes -->
+   <string name="DTNFragmentationMTU">5000</string>
+   
+   <!-- Flag whether to enable DTNManager debugging panel. The panel in this release include 
+  reset storage button and battery status button    -->
+   <string name="DTNManagerShowDebugPanel">true</string>
+   
+   <!-- Flag whether to enable test data logging. SDCard is required for this feature -->
+   <string name="DTNTestDataLogging_ONSDCard">false</string>
+   
+   <!-- The folder name for the test data logging. The test data folder will be in the root folder of SDCard -->
+   <string name="DTNTestDataPrefix">dtn_test_data</string>
+   
+   <!-- from GUI project -->
+   
+    <string name="app_name_sahana">Sahana App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="random">All the other things will come here</string>
+    <string name="loginID">Login ID</string>
+    <string name="password">Password</string>
+    <string name="loginButton">Enter</string>
+    <string name="userWho">User</string>
+    <string name="moduleSelect">Please select from the following modules</string>
+    <string name="missingPeopleReg">Missing People Registry</string>
+    <string name="disasterVictimId">Disaster Victim Identification</string>
+    <string name="shelterMgmt">Inventory Management</string>
+    <string name="title_activity_module_select">ModuleSelect</string>
+    <string name="title_activity_add_inventory_pg2">AddInventoryPg2</string>
+	<string name="sahana_destination_eid">dtn://dtn-a.dtn/me/prophet</string>
+   
+
+</resources>

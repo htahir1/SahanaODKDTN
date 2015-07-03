@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right" >
+
+    <ImageView
+        android:id="@+id/sahanaLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/header" />
+
+    <TextView
+        android:id="@+id/textViewRecRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/recov_request"
+        android:layout_alignLeft="@+id/textViewIdTag"
+        android:text="Recovery Request:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewMorgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/morgue_id"
+        android:layout_alignLeft="@+id/textViewRecRequest"
+        android:text="Morgue Id:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewAddDeadBdy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sahanaLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Add Dead Body:"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOutwardDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxIncomp"
+        android:layout_below="@+id/checkBoxIncomp"
+        android:text="Major Damage" />
+
+    <Button
+        android:id="@+id/btnproceed"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn"
+        android:text="Proceed" />
+
+    <TextView
+        android:id="@+id/textViewIdTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tag_id"
+        android:layout_alignBottom="@+id/tag_id"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:text="Id Tag Number:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/recov_request"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tag_id"
+        android:layout_below="@+id/morgue_id"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/morgue_id"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tag_id"
+        android:layout_below="@+id/tag_id"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/tag_id"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewAddDeadBdy"
+        android:layout_marginRight="11dp"
+        android:ems="10" >
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/checkBoxIncomp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewRecRequest"
+        android:layout_centerVertical="true"
+        android:text="Incomplete" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBurned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxIncomp"
+        android:layout_alignBottom="@+id/checkBoxIncomp"
+        android:layout_alignRight="@+id/recov_request"
+        android:text="Burned or charred" />
+
+    <Spinner
+        android:id="@+id/SpinnerGender"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textViewAppAge"
+        android:layout_alignLeft="@+id/recov_request"
+        android:layout_alignRight="@+id/checkBoxBurned" />
+
+    <Spinner
+        android:id="@+id/SpinnerAge"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textViewAppAge"
+        android:layout_alignLeft="@+id/SpinnerGender"
+        android:layout_alignRight="@+id/SpinnerGender" />
+
+    <TextView
+        android:id="@+id/textViewAppGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxOutwardDmg"
+        android:layout_below="@+id/checkBoxOutwardDmg"
+        android:layout_marginTop="29dp"
+        android:text="Apparent Gender:"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDecmposd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewAppGender"
+        android:layout_alignLeft="@+id/checkBoxBurned"
+        android:text="Decomposed" />
+
+    <TextView
+        android:id="@+id/textViewAppAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAppGender"
+        android:layout_below="@+id/textViewAppGender"
+        android:layout_marginTop="30dp"
+        android:text="Apparent Age:"
+        android:textSize="17sp" />
+
+</RelativeLayout>

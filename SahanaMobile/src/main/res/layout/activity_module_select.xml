@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right" >
+
+    <TextView
+        android:id="@+id/userWho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sahanaLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Modules"
+        android:textSize="20dp"  />
+
+    <ImageView
+         android:id="@+id/sahanaLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/header" />
+
+
+    <TextView
+        android:id="@+id/moduleSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sahanaLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Choose any of the following:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/disasterVictimBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/missingPeopleReg"
+        android:layout_alignRight="@+id/missingPeopleReg"
+        android:layout_below="@+id/missingPeopleReg"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn"
+        android:text="@string/disasterVictimId" />
+
+    <Button
+        android:id="@+id/inventoryMgmtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/disasterVictimBtn"
+        android:layout_alignRight="@+id/disasterVictimBtn"
+        android:layout_below="@+id/disasterVictimBtn"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn"
+        android:text="@string/shelterMgmt" />
+
+    <Button
+        android:id="@+id/missingPeopleReg"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/moduleSelection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/btn"
+        android:text="@string/missingPeopleReg" />
+
+</RelativeLayout>
